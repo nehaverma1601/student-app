@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-crud-app": {
+    "student": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-crud-app",
+            "outputPath": "dist/student",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-crud-app:build:production"
+              "buildTarget": "student:build:production"
             },
             "development": {
-              "buildTarget": "angular-crud-app:build:development"
+              "buildTarget": "student:build:development"
             }
           },
           "defaultConfiguration": "development"
